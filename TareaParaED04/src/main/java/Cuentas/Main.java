@@ -20,6 +20,12 @@ public class Main {
         System.out.println("Saldo actual: " + cuenta1.estado());
     }
     
+    /**
+     * Este método llama a los metodos retirar o ingresar de la clase CCuenta dependiendo de la eleccón del usuario
+     * @param cuenta hay que pasarle la cuenta sobre la que se quiere operar
+     * @param cantidad cantidad de dinero
+     * @param tipo tipo de operacion(retiro o ingreso)
+     */
     public static void operativa_cuenta(CCuenta cuenta, float cantidad, String tipo) {
         if (tipo.equalsIgnoreCase("retirar") || tipo.equalsIgnoreCase("retiro")) {
             try {
